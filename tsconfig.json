@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "strict": true,
+    "lib": ["es2022", "dom", "dom.iterable"],
+    "moduleResolution": "Bundler",
+    "module": "ESNext",
+    "noEmit": true,
+    "noUncheckedIndexedAccess": true,
+    "jsxImportSource": "preact",
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "react": ["node_modules/preact/compat"],
+      "react-dom": ["node_modules/preact/compat/"],
+      "@/*": ["src/*"],
+    },
+    "typeRoots": ["src/types", "./node_modules/@types"],
+    "types": [
+      "bun-types"
+    ]
+  },
+  "resolve": {
+    "extensions": [".js", ".jsx", ".ts", ".tsx", ".json", ".svg", ".css"]
+  },
+  "include": ["src/**/*"]
+}
